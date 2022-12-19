@@ -1,0 +1,593 @@
+/* 
+Colors: 
+blue: #cddadd
+light brown: #b89e6f
+dark red: #793600
+dark brown: #695125
+darkest brown: #493725
+dark blue: #3a4e5d
+
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+[class*=col-] {
+    padding: 0;
+  }
+
+img { max-width: 100%;}
+
+/* Universal styles */
+body {
+    font-family: 'DM Serif Display', serif;
+    color: #192B37; }
+
+
+
+/* background colors*/
+.bg-blue { background-color: #cddadd; } 
+.bg-light-brown {background-color: #b89e6f;}
+.bg-dark-red { background-color: #793600; } 
+.bg-dark-brown { background-color: #695125; opacity: 50%;} 
+.bg-darkest-brown {background-color: #493725; }
+.bg-dark-blue {background-color: #3a4e5d; }
+
+/* opacity bg colors*/
+.bg-dark-red-op { background-color: #793600; opacity: 50%;} 
+.bg-darkest-brown-op {background-color: #493725; opacity: 50%;}
+.bg-darkest-brown-op-90 {background-color: #493725; opacity: 90%;}
+.bg-dark-blue-op {background-color: #3a4e5d; opacity: 60%;}
+
+/* utility classes */
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-75 { height: 75vh;}
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+.tall-100 { min-height: 100vh; }
+
+.left     {  text-align: left;     }
+.right    {  text-align: right;    }
+.center {  text-align: center;   }
+
+
+.padded   {  padding: 2.5%;    }
+.padded-05 {  padding: 0.5rem;  }
+.padded-1 {  padding: 1rem;  }
+.padded-2 {  padding: 2rem;  }
+
+
+.margin-bottom-50 {
+    margin-bottom: 30%;
+}
+.margin-bottom-minus {
+    margin-bottom: -252px;
+}
+.margin-top-20 {
+    margin-top: 20%;
+}
+
+.capped-width { max-width: 1100px; margin: auto;}
+
+.tall-50  {  min-height: 50vh;   }
+.tall-100 {  min-height: 100vh;  }
+
+.dark-bg      {  background-color: rgb(90, 90, 95);     }
+.light-bg     {  background-color: rgb(240, 240, 245);  }
+.featured-bg  {  background-color: #ffeaa7;             }
+
+.centerImage {
+    overflow: hidden;
+    position: relative;
+}
+
+.centerImage img {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+.fill-horizontal {
+    width: 100%;
+}
+.caps {text-transform: uppercase;}
+  
+.blue-text { color: #cddadd; } 
+.light-brown-text {color: #b89e6f;}
+.dark-red-text { color: #793600;} 
+.dark-brown-text { color: #695125;} 
+.darkest-brown-text {color: #493725}
+.dark-blue-text {color: #3a4e5d}
+
+
+/* Header & footer Styles */
+header { background-image: url('/images/live-n-move-website10.png');
+background-size: cover;
+background-position: center;
+}
+
+header h3 {
+font-size: 5.5rem;
+line-height: 1;
+}
+
+header a {
+    text-decoration: none;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+
+}
+
+.menu {
+    border: none;
+    font-size: 2.5rem;
+}
+
+.logo { 
+    font-weight: lighter;
+    font-size: 5rem;
+    color: #cddadd;
+}
+
+/* Typography styles */
+
+h2, h3, h4, h5, h6 { 
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+}
+
+
+p { 
+    font-weight: 200;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+a:hover {
+    color: #b89e6f;
+}
+
+.white-text { color: white}
+.small-text { font-size: 1.5rem;}
+.medium-text { font-size: 2rem; line-height: 1.1;}
+.large-text { font-size: 3rem; line-height: 1.1;}
+.big-text { font-size: 4.5rem;}
+.bigger-text {font-size: 10rem;}
+.xl-text { font-size: 20rem;}
+
+.subtitle { 
+    font-size: 2.5rem; 
+    color: white; 
+}
+
+.quote-icon {
+    font-size: 6rem;
+    display: inline-block;
+    color: white; 
+    line-height: 1;
+}
+.font-weight-light { font-weight: 200;}
+.font-weight-normal { font-weight: normal;}
+.font-weight-extra-bold {font-weight: 800;}
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* this makes sure that the last element in any container doesn't have margin-bottom */
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child {
+margin-bottom:0;
+}
+
+
+/* Product section */
+.product-section {
+    margin-bottom: 0;
+padding-bottom: 0;}
+.product-section p {
+    padding-top: 60px;
+}
+/* Card styles */
+
+
+.bg-equipment {
+    background-position: 93% 79%;
+    border-top-width: 0px;
+    border-top-style: solid;
+    padding-bottom: 156%;
+}
+
+
+.bg-mats {
+        padding-bottom: 157%;
+        background-position: 36% 50%;
+        }
+
+.landscape { padding-bottom: 65%;}
+.portrait { padding-bottom: 150%;}
+.square { padding-bottom: 125%;}
+
+
+.card:hover { box-shadow: 0 20px 25px  #cddadd;, 0 10px 10px -5px rgba(0,0,0,.2)
+}
+.card h3 {
+  font-size: 1.8rem;
+  padding-top: 2rem; 
+  color: #cddadd;
+  text-align: center;
+}
+
+.card p {
+font-size: 1.5rem;
+ text-align: center;
+  color: #cddadd;
+}
+
+.card { border-radius: 10px;}
+
+
+@media(max-width: 36em) {
+    .horizontal-scroll {
+      overflow-x: auto;
+      flex-wrap: nowrap; 
+      padding-left: 2rem;
+      padding-right: 1rem; 
+      padding-bottom: 5%; 
+    }
+    .card .bg-mats, .bg-clothes, .bg-equipment {
+      margin-top: -25%;
+  }
+    .mob-padded-0: {
+      padding-left: 0;
+      padding-right: 0; }
+  }
+  
+  
+  @media (max-width: 48em) {
+    .horizontal-scroll {
+      overflow-x: auto;
+      flex-wrap: nowrap; 
+    }
+     .card img {
+    margin-top: -25%;
+    }
+  }
+
+
+
+  /* Shipping section */
+
+.shipping h3 {
+    font-size: 5rem;
+
+}
+
+.shipping p {
+    font-size: 2.5rem;
+}
+
+/*------- background images -----------*/
+
+.bg-equipment { 
+    background-image: url('/images/live-n-move-website1.png');
+    background-size: cover;
+}
+.bg-clothes { 
+    background-image: url('images/live-n-move-website2.png');
+    background-size: cover;}
+    
+.bg-mat {
+    background-image: url('/images/live-n-move-website3.png');
+    background-size: cover;}
+
+.bg-women {
+    background-image: url('/images/live-n-move-website4.png');
+    background-size: cover;}
+
+.bg-tribe {
+    background-image: url('/images/live-n-move-website5.png');
+    background-size: cover;
+    background-position: 45% 52%;}
+
+.bg-meditation {
+    background-image: url('/images/live-n-move-website6.png');
+    background-size: cover;
+    background-position: 45% 52%;}
+
+.bg-features {
+    background-image: url('/images/live-n-move-website7.png');
+    background-size: cover;
+    background-position: 45% 52%;}
+
+.bg-childpose {
+    background-image: url('/images/live-n-move-website8.png');
+    background-size: cover;
+    background-position: 45% 52%;}
+
+.bg-contact {
+    background-image: url('/images/live-n-move-website9.png');
+    background-size: cover;
+    background-position: 150% 100%;
+background-repeat: no-repeat;}
+
+.bg-header{
+    background-image: url('/images/live-n-move-website10.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh; }
+
+.bg-about {
+    background-image: url('/images/live-n-move-website11.png');
+    background-size: cover;
+    background-position: 45% 52%;}
+
+.bg-mats {
+    background-image: url('/images/live-n-move-website13.png');
+    background-size: cover;
+}
+
+.bg-circle {
+    background-image: url('/images/live-n-move-website14.png');
+    background-size: cover;
+    background-position: 45% 60%;}
+
+.bg-stone {
+    background-image: url('/images/live-n-move-website15.png');
+    background-size: cover;
+    background-position: 45% 52%;}
+
+.bg-candle {
+        background-image: url('/images/live-n-move-website16.png');
+        background-size: cover;
+        width: 100%;}
+
+.bg-yogapose {
+    background-image: url('/images/sonnie-hiles-rX8gBeg2WM0-unsplash\(1\)\(1\).jpg');
+    background-size: cover;
+    background-position: 50% 75%;
+}
+
+                            
+
+
+
+    /* icon grid */
+    .fa-regular { 
+        display: block; 
+        text-align: center; 
+        margin-bottom: 2rem;
+        font-size: 5rem;
+        color: white;
+
+    }
+
+
+    .fa-solid { 
+        display: block; 
+        text-align: center; 
+        margin-bottom: 2rem;
+        font-size: 6rem;
+        color: white;
+
+    }
+
+    .contact .fa-solid {
+        display: block;
+        text-align: left;
+        font-size: 5rem;
+        color: #b89e6f;
+    }
+
+    .fas { 
+        display: block; 
+        text-align: center; 
+        margin-bottom: 2rem;
+        font-size: 5rem;
+        color: white;
+
+    }
+
+
+    /* Buttons and links AND FORMS */
+
+.learn-more { 
+    border: 2px solid ; 
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.8rem 3rem; 
+    display: inline-block;
+    margin-top: 10rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+input, textarea {
+    width: 100%;
+    display: block;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 0.2rem;
+    padding: 1.5rem;
+    margin: 2rem 0.2rem 0 0;
+    font-family: inherit;
+    border: 2px solid transparent;
+}
+
+
+.contact {
+    font-size: 2rem; line-height: 1.1;
+}
+
+/* cool scroll effect */
+.fixed {
+    background-attachment: fixed;
+  }
+
+  .button {
+    appearance: none;
+    padding: 0.5rem 2rem;
+    border: 2px solid;
+    background-color: #b89e6f;
+    border: none;
+    font-size: 3rem;
+    padding: 2rem;
+    margin: 2rem 2rem 0 0;
+    margin-bottom: 5rem;
+    color: white;
+    border-radius: 1rem;
+  }
+
+  .button:hover {
+    color: #3a4e5d; opacity: 60%;
+  }
+
+  input:focus,
+  textarea:focus {
+    border: 2px solid #b89e6f;
+    outline: none;
+  }
+
+
+
+  a .maps {
+    display: inline-block;
+  } 
+
+
+
+  div.padded:nth-child(3) {
+    padding-bottom: 0.5%;
+    padding-top: 1.5%;
+    }
+
+
+    /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none;
+}
+
+/* ------- Large Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 68em) {
+    
+  .show-lg { display: block; }
+  .hide-lg { display: none;  }
+
+.lg-tall-80 {min-height: 80vh;}
+.lg-text-center { text-align: center; }
+.lg-text-left { text-align: left; }
+.lg-text-right { text-align: right; }
+
+.lg-text {font-size: 5rem;}
+.logo h2 { font-size: 3rem;}
+  .menu { font-size: 2rem;}
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+
+  .show-md { display: block; }
+  .hide-md { display: none;  }
+
+.md-tall-80 {min-height: 80vh;}
+
+.md-text {font-size: 5rem;}
+
+
+.md-padded-10 {padding: 10%;}
+  .md-padded { padding: 5%; }
+  .md-padded-1 { padding: 1rem; }
+  .md-padded-05 { padding: 0.5rem; }
+
+.logo h2 { font-size: 3rem;}
+  .menu { font-size: 2rem;}
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+@media (max-width: 48em) {
+    html { font-size: 14px ;}
+  .show-sm { display: block; }
+  .hide-sm { display: none;  }
+	 
+  .sm-text-center { text-align: center; }
+  .sm-text-left { text-align: left; }
+  .sm-text-right { text-align: right; }
+
+  .sm-padded-10 {padding: 10%;}
+  .sm-padded { padding: 5%; }
+  .sm-padded-1 { padding: 1rem; }
+  .sm-padded-05 { padding: 0.5rem; }
+
+  .sm-padded-t-0 { padding-top: 0; }
+  .sm-padded-b-0 { padding-bottom: 0; }
+  .sm-padded-l-0 { padding-left: 0; }
+  .sm-padded-r-0 { padding-right: 0; }
+  
+  .sm-margin-t-0 { margin-top: 0; }
+  .sm-margin-b-0 { margin-bottom: 0; }
+  .sm-margin-l-0 { margin-left: 0; }
+  .sm-margin-r-0 { margin-right: 0; }
+  .sm-text {font-size: 4.5rem;}
+
+  .logo h2 { font-size: 3rem;}
+  .menu { font-size: 2rem;}
+  .header h3 {font-size: 11vw;}
+  .flip-col-sm {flex-direction: column-reverse; }
+  
+}
+
+
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 36em) {
+
+  .show-xs { display: block; }
+  .hide-xs { display: none;  }
+
+}
+
+
+/* ------- Optional XXS Media Query (25em / 400px) NOT part of default Gridlex styling--------------- */ 
+/* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
+
+@media (max-width: 25em) {
+    [class*=grid] .xxs-stack {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+
