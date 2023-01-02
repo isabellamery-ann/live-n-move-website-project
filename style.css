@@ -124,9 +124,28 @@ header a {
 
 }
 
+header nav {
+    position: fixed;
+    top: 2rem;
+    right: -47rem;
+    margin: 0;
+    transition: 1s all;
+    
+
+}
+
+header nav:hover {
+    right: 0;
+}
+
+header nav a {
+    padding: 2%;
+    font-size: 8rem;
+    display: inline;
+}
 .menu {
     border: none;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .logo { 
