@@ -1,0 +1,92 @@
+--- 
+layout: default
+gallery: 
+- column-size: col-6
+  aspect-ratio: square
+  background-image: /images/live-n-move-website8.png
+- column-size: col-6
+  aspect-ratio: square
+  background-image: /images/live-n-move-website6.png
+- column-size: col-12
+  aspect-ratio: landscape
+  background-image: /images/live-n-move-website5.png
+- column-size: col-4
+  aspect-ratio: square
+  background-image: /images/live-n-move-website7.png
+- column-size: col-4
+  aspect-ratio: square
+  background-image: /images/live-n-move-website15.png
+- column-size: col-4
+  aspect-ratio: square
+  background-image: /images/live-n-move-website14.png
+---
+
+ <!--------------- header banner ------------------------>
+ <header class="padded grid text-center tall-100 md-tall-80  bg-header fixed"> 
+        
+    {% include header-nav.html %}
+
+
+    <div class="col-12 text-center"> 
+<h3 class="font-weight-extra-bold big-text editable white-text sm-text md-text" data-aos="fade-in" data-aos-duration="2000">  Explore   <span class="dark-blue-text"> our world </span> </h3>
+<h1 class="font-weight-light white-text large-text editable hide-md hide-lg" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300"> Make movement a part of your daily life with mini workouts and easy exercises </h1>
+<a href="#" class="learn-more inverted"> Learn More</a>    
+</div>
+
+
+</header>
+
+<section class="padded"> 
+  
+    <!-----Advanced grids---->
+
+    <div class="gallery grid">
+
+        {% for item in page.gallery %}
+        <div class="{{item.column-size}}">
+          <div class=" {{item.aspect-ratio}} bg-img-1" 
+            style="background-color: rgb(240, 240, 240);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat; 
+          background-image: url('{{item.background-image}}');"></div>
+        </div>
+       {% endfor %}
+
+    </div>
+  
+
+</section>
+
+
+<!--<section class="padded"> 
+  
+    <!-----Advanced grids---->
+
+    <!---<div class="gallery grid">
+       <div class="gallery grid">
+    <div class="col-6">
+      <div class="bg-image square bg-img-1"></div>
+    </div>
+    <div class="col-6">
+      <div class="bg-image square bg-img-2 bg-pos-b"></div>
+    </div>
+    <div class="col-4_xs-12">
+      <div class="bg-image portrait-tall bg-img-3"></div>
+    </div>
+    <div class="col-4_xs-12">
+      <div class="bg-image portrait-tall bg-img-4"></div>
+    </div>
+    <div class="col-4_xs-12">
+      <div class="bg-image portrait-tall "></div>
+    </div>
+    <div class="col-12">
+      <div class="bg-image landscape bg-img-5"></div>
+    </div>
+</div>
+   
+  
+  
+  
+
+</section>

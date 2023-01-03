@@ -168,8 +168,8 @@ header nav a {
     
 }
 
-.hamburger-button {
-    cursor: pointer;
+.hamburger-button {  
+  cursor: pointer;
   padding: 0 0.5rem; 
   display: inline-block; 
   font-size: 2.5rem;
@@ -179,11 +179,8 @@ header nav a {
   top: 2.4rem; 
   z-index: 2;
   position: fixed;
-
     
 }
-
-
 
 
 .logo, nav a { 
@@ -273,8 +270,8 @@ padding-bottom: 0;}
 .product-section p {
     padding-top: 60px;
 }
-/* Card styles */
 
+/* Card styles */
 
 .bg-equipment {
     background-position: 93% 79%;
@@ -289,9 +286,6 @@ padding-bottom: 0;}
         background-position: 36% 50%;
         }
 
-.landscape { padding-bottom: 65%;}
-.portrait { padding-bottom: 150%;}
-.square { padding-bottom: 125%;}
 
 
 .card:hover { box-shadow: 0 20px 25px  #cddadd;, 0 10px 10px -5px rgba(0,0,0,.2)
@@ -433,7 +427,46 @@ background-repeat: no-repeat;}
     background-position: 50% 75%;
 }
 
+
+
+/* Gallery - Background Images */
+.bg-img-1 {background-image: url('https://source.unsplash.com/wHgkrmuMFOY');}
+.bg-img-2 {background-image: url('https://source.unsplash.com/yihlaRCCvd4');}
+.bg-img-3 {background-image: url('https://source.unsplash.com/TzjMd7i5WQI');}
+.bg-img-4 {background-image: url('https://source.unsplash.com/ybHtKz5He9Y');}
+
+.gallery [class*="col-"] {
+    padding: 0.1%;
+  }
                             
+ /* Billedformat */
+ .portrait-tall {padding-bottom: 250%;}
+ .portrait { padding-bottom: 125%;}
+ .square {padding-bottom: 100%;}
+ .landscape {padding-bottom: 66%;}
+ .landscape-wide {padding-bottom: 56%;}
+ .square { padding-bottom: 125%;}
+ 
+ /*Responsive utility-classes for bg-images*/
+ .bg-image {
+     background-color: rgb(240, 240, 240);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat; 
+     background-image: url('https://source.unsplash.com/Sg3XwuEpybU');
+     padding-bottom: 10%;
+   }
+ 
+   /* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+.bg-pos-t-l { background-position: 10% 10%; }
+.bg-pos-b-r { background-position: 85% 85%; }
+.bg-corgi {background-position: 35% 57%;}
+.bg-88 {padding-bottom: 88%;}
+.bg-355 {  padding-bottom: 355%;}
 
 
 
