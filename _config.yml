@@ -6,7 +6,7 @@ aspect-ratios:
 - landscape
 - landscape-wide
 
-column-sizes: 
+column-size: 
 col-6: One-Half
 col-12: Full Width
 col-4: One Third
