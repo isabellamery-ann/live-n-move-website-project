@@ -1,0 +1,28 @@
+seo: 
+  site_name: Live N Move
+  title: Default SEO Title
+  description: 
+  keywords: 
+  social_image: 
+  author: 
+  favicon_image: 
+social: 
+  instagram_username:
+  facebook_url:
+  twitter_username: 
+design: 
+  blue: '#cddadd;'
+  light-brown: '#b89e6f'
+  dark-red: '#793600'
+  dark-brown: '#695125'
+  darkest-brown: '#493725'
+  dark-blue: '#3a4e5d'
+  blue-text:  '#cddadd' 
+  light-brown-text:  '#b89e6f'
+  dark-red-text:  '#793600'
+  dark-brown-text:  '#695125'
+  darkest-brown-text: '#493725'
+  dark-blue-text: '#3a4e5d'
+  dark-text_color: 'rgb(60,60,65)'
+  medium-text_color: 'rgb(90,90,95)'
+  light-text_color: '#f7f5f3'

@@ -1,24 +1,32 @@
 ---
 layout: default
+popup-gallery: true
+gallery-background: bg-light-brown 
 gallery:
   - column-size: col-6
     aspect-ratio: portrait
-    background-image: /images/live-n-move-website8.png
+    background_image: /images/live-n-move-website8.png
+    type: yoga-pose
   - column-size: col-6
     aspect-ratio: square
-    background-image: /images/live-n-move-website6.png
+    background_image: /images/live-n-move-website6.png
+    type: yoga-pose
   - column-size: col-12
     aspect-ratio: landscape
-    background-image: /images/live-n-move-website5.png
-  - column-size: col-4
+    background_image: /images/live-n-move-website5.png
+    type: yoga-pose
+  - column-size: col-4_sm-12
     aspect-ratio: square
-    background-image: /images/live-n-move-website7.png
-  - column-size: col-4
+    background_image: /images/live-n-move-website7.png
+    type: meditation
+  - column-size: col-4_sm-12
     aspect-ratio: square
-    background-image: /images/live-n-move-website15.png
-  - column-size: col-4
+    background_image: /images/live-n-move-website15.png
+    type: meditation
+  - column-size: col-4_sm-12
     aspect-ratio: square
-    background-image: /images/live-n-move-website14.png
+    background_image: /images/live-n-move-website14.png
+    type: meditation
 ---
 <!--------------- header banner ------------------------>
  <header class="padded grid text-center tall-100 md-tall-80  bg-header fixed"> 
@@ -35,26 +43,73 @@ gallery:
 
 </header>
 
-<section class="padded"> 
-  
-    <!-----Advanced grids---->
 
-    <div class="gallery grid">
+{% if page.popup-gallery == true %}
+ <!---- Popup Gallery --->
+<section class="padded {{page.gallery-background}}"> 
+   
+    <h2> Popup Gallery </h2>
+    <div class="gallery grid" id="lightgallery">
 
         {% for item in page.gallery %}
-        <div class="{{item.column-size}}">
+
+        {% if item.type != 'meditation' %}
+
+        <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
           <div class=" {{item.aspect-ratio}} bg-img-1" style="background-color: rgb(240, 240, 240);
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat; 
-          background-image: url('{{item.background-image}}');"></div>
-        </div>
+          background-image: url('{{item.background_image}}');"></div>
+        </a>
+        {% endif %}
+
+        {% endfor %}
+    </div>
+  </section>
+
+  {% else %}
+
+  <!---Standard gallery -->
+  <section class="padded {{page.gallery-background}}"> 
+    
+    <h2> Standard Gallery </h2>
+    <div class="gallery grid" id="lightgallery">
+
+        {% for item in page.gallery %}
+
+        <a class="{{item.column-size}}">
+          <div class=" {{item.aspect-ratio}} bg-img-1" style="background-color: rgb(240, 240, 240);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat; 
+          background-image: url('{{item.background_image}}');"></div>
+        </a>
        {% endfor %}
 
     </div>
-  
-
 </section>
+
+{% endif %}
+
+<!--------------- testimonial section ------------------------>
+{% include testimonial.html %}
+
+
+
+<!---- Button "View Our Work" - popup gallery --->
+      
+<!-- <div class="gallery grid" id="lightgallery-2">
+    <a class="button" href="/images/live-n-move-website14.png" title="Yoga pose 1">
+      View Our Work </a>
+    <a href="/images/live-n-move-website8.png" title="Yoga pose 1"></a>
+    <a href="/images/live-n-move-website7.png" title="Yoga pose 2"></a>
+    <a href="/images/live-n-move-website6.png" title="Yoga pose 3"></a>
+    <a href="/images/live-n-move-website5.png" title="Yoga pose 4"></a>
+    <a href="/images/live-n-move-website14.png" title="Yoga pose 5"></a>
+   
+
+</div>
 
 
 <!--<section class="padded"> 

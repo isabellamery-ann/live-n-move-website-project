@@ -1,63 +1,102 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <!--- The title for SEO & browser tabs---->
-        <title> </title>
+<title> </title>
 
-        <!--Viewport meta tag for respnsive-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Viewport meta tag for respnsive-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Gridlex -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-
-
-
-        <!---Font-awesome cdn--->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Gridlex -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
 
-        <!-- Google fonts--->
 
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&family=Raleway:wght@300;400;800;900&display=swap" rel="stylesheet">
+<!---Font-awesome cdn--->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!-- Google fonts--->
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300&family=Raleway:wght@300;400;800;900&display=swap" rel="stylesheet">
 
 <!--- animate on scroll -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-        <!--- My own custom stylesheet ---->
-        <link rel="stylesheet" href="/style.css">
+
+<!-- Lightgallery for pop-ups - husk altid før vores custom stylesheet -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css" integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--- My own custom stylesheet ---->
+<link rel="stylesheet" href="/style.css">
+
     </head>
-
-
-    <!--------------- header banner ------------------------>
-    <!---<header class="padded grid text-center tall-100 bg-header fixed"> 
-        <div class="header-nav col-12-top grid">
-            <div class="col-5_md-12 sm-padded-1 md-padded">
-                <a href="/index.html" class="logo">
-                    <h2 class="logo sm-text-center"> Live N Move</h2>
-                </a>
-            </div>
-
-        <nav class="col-7_lg-12_md-12_sm-12 sm-text-center lg-text-center right grid-spaceAround">
-            <a href="/index.html" class="menu"> Home</a>
-            <a href="/about.html" class="menu"> About</a>
-            <a href="/ourproducts.html" class="menu"> Our Products </a>
-            <a href="/contact.html" class="menu"> Contact</a>
-        </nav>
-
-
-
-    </div>
-        <div class="col-12-middle"> 
-    <h3 class="font-weight-extra-bold big-text editable white-text sm-text md-text ">  Get moving to get   <span class="dark-blue-text"> healthier </span> </h3>
-    <h1 class="font-weight-light white-text large-text editable hide-md hide-lg"> Make movement a part of your daily life with mini workouts and easy exercises </h1>
-    <a href="#" class="learn-more inverted"> Learn More</a>    
-</div>
-
-</header>
-
 
 <!--this is the body - all the actual content on the homepage -->
 <body>
+
+    <style>
+
+    :root { 
+        --blue: #cddadd; ;
+        --light-brown: #b89e6f ;
+        --dark-red: #793600 ;
+        --dark-brown: #695125 ;
+        --darkest-brown: #493725 ;
+        --dark-blue: #3a4e5d ;
+        --blue-text:  #cddadd ;
+        --light-brown-text:  #b89e6f ;
+        --dark-red-text:  #793600 ;
+        --dark-brown-text:   ;
+        --darkest-brown-text: #493725 ;
+        --dark-blue-text: #3a4e5d ;
+        --dark-text_color: rgb(60,60,65) ;
+        --medium-text_color: rgb(90,90,95) ;
+        --light-text_color: #f7f5f3 ;
+    }
+
+</style>
+    
+    <!--------------- header banner ------------------------>
+   <header class="padded grid text-center tall-100 md-tall-80  bg-header fixed"> 
+        
+    <div class="header-nav col-12-top grid">
+    <div class="col-5_md-11 sm-padded-1 md-padded">
+        <a href="/index.html" class="logo">
+            <h2 class="logo sm-text-center"> Live N Move </h2>
+        </a>
+    </div>
+
+    <div class="col-12-top">
+        <div class="hamburger-button">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+<nav class="col-7_sm-12-middle sm-text-right lg-text-right grid-spaceAround">
+    <a href="/index.html" class="menu"> Home </a>
+    <a href="/about.html" class="menu"> About </a>
+    <a href="/ourproducts.html" class="menu"> Our Products </a>
+    <a href="/gallery.html" class="menu"> Gallery </a>
+    <a href="/contact.html" class="menu"> Contact </a>
+</nav>
+
+
+
+</div>
+
+</div>
+
+
+
+    <div class="col-12 text-center"> 
+<h3 class="font-weight-extra-bold big-text editable white-text sm-text md-text" data-aos="fade-in" data-aos-duration="2000">  Get moving to get   <span class="dark-blue-text"> healthier </span> </h3>
+<h1 class="font-weight-light white-text large-text editable hide-md hide-lg" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300"> Make movement a part of your daily life with mini workouts and easy exercises </h1>
+<a href="/gallery.html" class="learn-more inverted"> Learn More</a>    
+</div>
+
+
+</header>
 
          <!--------------- header banner ------------------------>
      <header class="padded grid text-center tall-100 md-tall-80  bg-header fixed"> 
@@ -161,39 +200,43 @@
 
 
      <!------------- footer ---------------->
-     <footer class="padded grid bg-darkest-brown-op-90">
-        <div class="logo center col-12"> Live N Move </div>
-        </div>    
-       
-        <div class="col-4 center"> 
-            <p class="white-text"> <strong> Phone</strong> <br> <a href="tel: #"> 04555 5555</a>  </p>
-           </div>
-    
-        <div class="col-4"> 
-            <p class="white-text center"> <strong> Email</strong> <br> <a href="mailto: #"> hello@livenmove.co</a> </p>
-            </div>
-    
-    
-        <div class="col-4 center"> 
-                <p class="white-text"> <strong> Social</strong> <br> <a href="https://www.instagram.com/thesleepco">@livenmove</a>  </p>
-                    </div>
-    
-              
-    
-        </footer>
+    <footer class="padded grid bg-darkest-brown-op-90">
+    <div class="logo center col-12"> Live N Move </div>
+    </div>    
+   
+    <div class="col-4 center"> 
+        <p class="white-text"> <strong> Phone</strong> <br> <a href="tel: #"> 04555 5555</a>  </p>
+       </div>
+
+    <div class="col-4"> 
+        <p class="white-text center"> <strong> Email</strong> <br> <a href="mailto: #"> hello@livenmove.co</a> </p>
+        </div>
 
 
+    <div class="col-4 center"> 
+            <p class="white-text"> <strong> Social</strong> <br> <a href="https://www.instagram.com/thesleepco">@livenmove</a>  </p>
+                </div>
 
-  
+          
 
-    <!--- Add jQuery ---->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </footer>
+        
+
+    <!---- scripts ---->
+
+       <!--- Add jQuery ---->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-    <!---Animate on scroll  -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <!---Animate on scroll  -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- our custom javascript file --> 
-    <script src="/scripts.js"></script>
-    </body>
-    </html>
+   <!-- Lightgallery for pop-ups - husk at den skal før </body> of før vores custom files  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
+
+   <!-- our custom javascript file --> 
+   <script src="/scripts.js"></script>
+
+
+</body>
+</html>

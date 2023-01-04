@@ -3,19 +3,7 @@ layout: default
 ---
 
     <!--------------- header banner ------------------------>
-    <header class="padded grid text-center tall-100 md-tall-80  bg-header fixed"> 
-        
-        {% include header-nav.html %}
-
-
-        <div class="col-12 text-center"> 
-    <h3 class="font-weight-extra-bold big-text editable white-text sm-text md-text" data-aos="fade-in" data-aos-duration="2000">  Get moving to get   <span class="dark-blue-text"> healthier </span> </h3>
-    <h1 class="font-weight-light white-text large-text editable hide-md hide-lg" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300"> Make movement a part of your daily life with mini workouts and easy exercises </h1>
-    <a href="/gallery.html" class="learn-more inverted"> Learn More</a>    
-</div>
-
-    
-</header>
+   {% include site-header.html%}
 
 <!--------------------- gallery section /about section ------------------>
 <section class="grid bg-blue">
@@ -103,18 +91,7 @@ layout: default
 </section>
 
 <!--------------- testimonial section ------------------------>
-<section class="padded grid-middle bg-dark-red">
-    <div class="col-1 text-right">
-        <span class="quote-icon xl-text">“</span>
-    </div> 
-    <div class="col-10 text-center">
-        <p class="big-text font-weight-light white-text" > I've never felt this <span  class="light-brown-text"> calm </span> and <span  class="light-brown-text"> aligned </span></p>
-        <p class="subtitle"> - Frankie, Virtual Assistant</p>
-    </div> 
-    <div class="col-1">
-        <span class="quote-icon xl-text">”</span>
-    </div> 
-         </section>
+{% include testimonial.html %}
 
 
 <!--------------- image banner circle ------------------------>
