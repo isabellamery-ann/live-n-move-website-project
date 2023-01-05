@@ -41,7 +41,7 @@ gallery:
 
         {% for item in page.gallery %}
 
-        {% if item.type != 'meditation' %}
+        
 
         <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
           <div class=" {{item.aspect-ratio}} bg-img-1" style="background-color: rgb(240, 240, 240);
@@ -50,7 +50,7 @@ gallery:
           background-repeat: no-repeat; 
           background-image: url('{{item.background_image}}');"></div>
         </a>
-        {% endif %}
+        
 
         {% endfor %}
     </div>

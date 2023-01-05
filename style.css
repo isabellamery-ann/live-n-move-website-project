@@ -47,7 +47,7 @@ body {
 .tall-50 { min-height: 50vh; }
 .tall-60 { min-height: 60vh; }
 .tall-70 { min-height: 70vh; }
-.tall-75 { height: 75vh;}
+.tall-75 { min-height: 75vh;}
 .tall-80 { min-height: 80vh; }
 .tall-90 { min-height: 90vh; }
 .tall-100 { min-height: 100vh; }
@@ -67,10 +67,7 @@ body {
     width: 100%;
     }
 
-    [class*="grid-"] > [class*="col-4"], [class*="grid_"] > [class*="col-4"], [class~="grid"] > [class*="col-4"] {
-        flex-basis: 100%;
-        max-width: 100%;
-        }
+  
 
 
 .margin-bottom-50 {
@@ -159,6 +156,7 @@ header nav a {
     left:0;
     right: 0; 
     text-align: center;
+    z-index: 9;
 }
 
 .menu a {
@@ -179,7 +177,7 @@ header nav a {
   margin-top: -0.7rem; 
   right: 1rem ;
   top: 2.4rem; 
-  z-index: 2;
+  z-index: 11;
   position: fixed;
     
 }
@@ -221,7 +219,7 @@ a {
     border-bottom: 1px solid;
 }
 
-a:hover {
+a:hover, .logo:hover {
     color: #b89e6f;
 }
 
@@ -305,7 +303,9 @@ font-size: 1.5rem;
   color: #cddadd;
 }
 
-.card { border-radius: 10px;}
+.card { 
+    border-radius: 10px;
+    overflow: hidden;}
 
 
 @media(max-width: 36em) {
@@ -432,10 +432,22 @@ background-repeat: no-repeat;}
 
 
 /* Gallery - Background Images */
+.bg-image {
+    background-color: rgb(240, 240, 240);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-image: url('https://source.unsplash.com/Sg3XwuEpybU');
+    padding-bottom: 10%;
+  }
+
+
 .bg-img-1 {background-image: url('https://source.unsplash.com/wHgkrmuMFOY');}
 .bg-img-2 {background-image: url('https://source.unsplash.com/yihlaRCCvd4');}
 .bg-img-3 {background-image: url('https://source.unsplash.com/TzjMd7i5WQI');}
 .bg-img-4 {background-image: url('https://source.unsplash.com/ybHtKz5He9Y');}
+
+
 
 .gallery [class*="col-"] {
     padding: 0.9%;
@@ -469,14 +481,7 @@ background-repeat: no-repeat;}
  .square { padding-bottom: 125%;}
  
  /*Responsive utility-classes for bg-images*/
- .bg-image {
-     background-color: rgb(240, 240, 240);
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat; 
-     background-image: url('https://source.unsplash.com/Sg3XwuEpybU');
-     padding-bottom: 10%;
-   }
+ 
  
    /* Background Position */
 .bg-pos-t { background-position: top; }
